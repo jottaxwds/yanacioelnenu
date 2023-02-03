@@ -15,7 +15,7 @@
     --> <title>Ya Nació el Nenu?</title>
     <style>
       html {
-        background: #ff0050;
+        background: #0cd36e;
         color: white;
         display: flex;
         flex-direction: column;
@@ -28,12 +28,21 @@
       h1 {
         font-size: 10rem;
       }
+      h1 span {
+        font-size: 14rem;
+      }
       h3 span {
         font-size: 4rem;
       }
     </style>
   </head> <body>
-    <h1>NO!</h1>
-    <h3>...pero ya falta poco 🤰🏽 ...</h3>
-    <p><em>(Actualiza esta pagina para estar al tanto...)</em></p>
-  </body> </html>
+    <h1>SI! <span>🎉</span></h1>
+    <h3>Y no podría haber sido mejor!</h3>
+    <p><em>❤️ Mamá, Papá, Valeria & Víctor agradecemos las muestras de cariño recibidas ❤️</em></p>
+  </body><script type="module">
+    import confetti from "https://cdn.skypack.dev/canvas-confetti";
+    confetti();
+    window.addEventListener("click", () => {
+      confetti();
+    });
+  </script> </html>
